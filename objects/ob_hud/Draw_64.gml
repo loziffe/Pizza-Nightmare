@@ -1,0 +1,28 @@
+font = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0)
+draw_set_font(font)
+draw_set_halign(fa_center)
+draw_set_color(c_white)
+if instance_exists(ob_wavesystem)
+{
+	draw_text(600, 50, "WAVE: " + string(global.wave))
+	draw_text(600, 100, "ENEMIES: " + string(global.enemies))
+}
+//draw_sprite_ext(sp_peptv, 0, 100, 80, 1, 1, 1, c_white, 1)
+
+
+	if ((global.hp == 8))
+    draw_sprite_ext(sp_pizzahealth, 0, 100, 80, 1, 1, 1, c_white, 1)
+else if ((global.hp == 7))
+    draw_sprite_ext(sp_pizzahealth, 1, 100, 80, 1, 1, 1, c_white, 1)
+else if ((global.hp == 6))
+    draw_sprite_ext(sp_pizzahealth, 2, 100, 80, 1, 1, 1, c_white, 1)
+else if ((global.hp == 5))
+    draw_sprite_ext(sp_pizzahealth, 3, 100, 80, 1, 1, 1, c_white, 1)
+else if ((global.hp == 4))
+    draw_sprite_ext(sp_pizzahealth, 4, 100, 80, 1, 1, 1, c_white, 1)
+else if ((global.hp == 3))
+    draw_sprite_ext(sp_pizzahealth, 5, 100, 80, 1, 1, 1, c_white, 1)
+else if ((global.hp == 2))
+    draw_sprite_ext(sp_pizzahealth, 6, 100, 80, 1, 1, 1, c_white, 1)
+else if ((global.hp == 1))
+    draw_sprite_ext(sp_pizzahealth, 7, 100, 80, 1, 1, 1, c_white, 1)

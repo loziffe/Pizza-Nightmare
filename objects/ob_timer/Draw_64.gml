@@ -1,0 +1,1 @@
+draw_text(600, 700, string_hash_to_newline(minutes) + ":" + string(seconds))
